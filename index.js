@@ -12,7 +12,6 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-app.use("/users", userRoutes);
 app.use("/account", accRoutes);
 
 const CONNECTION_URL =
